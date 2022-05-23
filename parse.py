@@ -13,22 +13,7 @@ DB_PASS = ''
 DB_PORT = 5432
 DB_DATABASE = ''
 
-# grammar = Grammar(
-#     r"""
-#     Start      = ws Node ws
-#     Node       = lnode NodeName ws NodeItems? ws rnode
-#     NodeName   = ~r"\w*"
-#     NodeItems  = NodeItem (ws NodeItem)*
-#     NodeItem   = Node / NodeText
-#     NodeText   = ~r":\w*"
 
-#     ws         = ~r"\s*"
-#     lnode      = "{"
-#     rnode      = "}"
-#     lpar       = "\("
-#     rpar       = "\)"
-#     """
-# )
 def get_grammar():
     return Grammar(
         r"""
