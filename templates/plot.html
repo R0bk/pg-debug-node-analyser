@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}Query Plot{% endblock %}
+
+{% block content %}
+
+    <h2>Query {{ plot_name }}</h2>
+    <pre><code class="language-pgsql">{{ query }}</code></pre>
+
+    <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="/static/html/{{ plot_name }}.html" height="800" width="100%"></iframe>
+
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js" id="plotlyjs"></script>
+
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        const iframe = document.getElementsByTagName('iframe')[0]
+
+
+        const head = iframe.contentWindow.document.getElementsByTagName('head')[0]
+        const script = iframe.contentWindow.document.createElement('script')
+        script.innerText = document.getElementById('plotlyjs').innerText
+        script.type = 'text/javascript'
+        head.appendChild(script)
+
+        iframe.addEventListener('load', () => {
+            window.frames[0].document.body.style.margin = 0
+        })
+    </script>
+{% endblock %}
+
+

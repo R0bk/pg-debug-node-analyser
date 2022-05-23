@@ -1,0 +1,148 @@
+2022-05-03 01:01:58 UTC-12345a6b.cdef0-DETAIL:     {PLANNEDSTMT 
+	   :commandType 1 
+	   :queryId 2182745840 
+	   :hasReturning false 
+	   :hasModifyingCTE false 
+	   :canSetTag true 
+	   :transientPlan false 
+	   :dependsOnRole false 
+	   :parallelModeNeeded false 
+	   :jitFlags 0 
+	   :planTree 
+	      {RESULT 
+	      :startup_cost 0.00 
+	      :total_cost 0.01 
+	      :plan_rows 1 
+	      :plan_width 64 
+	      :parallel_aware false 
+	      :parallel_safe false 
+	      :plan_node_id 0 
+	      :targetlist (
+	         {TARGETENTRY 
+	         :expr 
+	            {FUNCEXPR 
+	            :funcid 2078 
+	            :funcresulttype 25 
+	            :funcretset false 
+	            :funcvariadic false 
+	            :funcformat 0 
+	            :funccollid 100 
+	            :inputcollid 100 
+	            :args (
+	               {CONST 
+	               :consttype 25 
+	               :consttypmod -1 
+	               :constcollid 100 
+	               :constlen -1 
+	               :constbyval false 
+	               :constisnull false 
+	               :location -1 
+	               :constvalue 19 [ 76 0 0 0 106 119 116 46 99 108 97 105 109 115 
+	               46 114 111 108 101 ]
+	               }
+	               {CONST 
+	               :consttype 25 
+	               :consttypmod -1 
+	               :constcollid 100 
+	               :constlen -1 
+	               :constbyval false 
+	               :constisnull false 
+	               :location -1 
+	               :constvalue 14 [ 56 0 0 0 103 117 101 115 116 95 117 115 101 11
+	               4 ]
+	               }
+	               {CONST 
+	               :consttype 16 
+	               :consttypmod -1 
+	               :constcollid 0 
+	               :constlen 1 
+	               :constbyval true 
+	               :constisnull false 
+	               :location 26 
+	               :constvalue 1 [ 1 0 0 0 0 0 0 0 ]
+	               }
+	            )
+	            :location 7
+	            }
+	         :resno 1 
+	         :resname set_config 
+	         :ressortgroupref 0 
+	         :resorigtbl 0 
+	         :resorigcol 0 
+	         :resjunk false
+	         }
+	         {TARGETENTRY 
+	         :expr 
+	            {FUNCEXPR 
+	            :funcid 2078 
+	            :funcresulttype 25 
+	            :funcretset false 
+	            :funcvariadic false 
+	            :funcformat 0 
+	            :funccollid 100 
+	            :inputcollid 100 
+	            :args (
+	               {CONST 
+	               :consttype 25 
+	               :consttypmod -1 
+	               :constcollid 100 
+	               :constlen -1 
+	               :constbyval false 
+	               :constisnull false 
+	               :location -1 
+	               :constvalue 8 [ 32 0 0 0 114 111 108 101 ]
+	               }
+	               {CONST 
+	               :consttype 25 
+	               :consttypmod -1 
+	               :constcollid 100 
+	               :constlen -1 
+	               :constbyval false 
+	               :constisnull false 
+	               :location -1 
+	               :constvalue 14 [ 56 0 0 0 103 117 101 115 116 95 114 111 108 10
+	               1 ]
+	               }
+	               {CONST 
+	               :consttype 16 
+	               :consttypmod -1 
+	               :constcollid 0 
+	               :constlen 1 
+	               :constbyval true 
+	               :constisnull false 
+	               :location 52 
+	               :constvalue 1 [ 1 0 0 0 0 0 0 0 ]
+	               }
+	            )
+	            :location 33
+	            }
+	         :resno 2 
+	         :resname set_config 
+	         :ressortgroupref 0 
+	         :resorigtbl 0 
+	         :resorigcol 0 
+	         :resjunk false
+	         }
+	      )
+	      :qual <> 
+	      :lefttree <> 
+	      :righttree <> 
+	      :initPlan <> 
+	      :extParam (b)
+	      :allParam (b)
+	      :resconstantqual <>
+	      }
+	   :rtable <> 
+	   :resultRelations <> 
+	   :nonleafResultRelations <> 
+	   :rootResultRelations <> 
+	   :subplans <> 
+	   :rewindPlanIDs (b)
+	   :rowMarks <> 
+	   :relationOids <> 
+	   :invalItems <> 
+	   :paramExecTypes <> 
+	   :utilityStmt <> 
+	   :stmt_location 0 
+	   :stmt_len 0
+	   }

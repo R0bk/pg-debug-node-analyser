@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Queries{% endblock %}
+
+{% block content %}
+
+    <h1>Queries</h1>
+    <table class="sortable">
+      <tr>
+        <th>Log ID</th>
+        <th>Plan ID</th>
+        <th>Cost</th>
+        <th>Query</th>
+        <th>Query Type</th>
+      </tr>
+      {% for item in queries %}
+          <tr class="item">
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+            <td><pre><code class="language-pgsql">{{ item[3] }}</code></pre></td>
+            <td>{{ item[4] }}</td>
+            <td><form><button formaction="/plot/{{ item[0] }}_{{ item[1] }}" class="noice-button">Detail</button></form></td>
+          </tr>
+      {% endfor %}
+    </table>
+
+{% endblock %}
